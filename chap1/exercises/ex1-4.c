@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-/* Write a program to print 
-the corresponding Celsius to Fahrenheit*/
+/*
+Write a program to print 
+the corresponding Celsius to Fahrenheit
+*/
 void main()
 {
     float fahr, celsius;

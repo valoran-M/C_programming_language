@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/*
+Program which counting line
+*/
 void main()
 {
     int c, nl;

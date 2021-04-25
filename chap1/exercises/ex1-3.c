@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-/* Modify the temperature conversion program to
-print heading above the table*/
+/*
+Modify the temperature conversion program to
+print heading above the table
+*/
 void main()
 {
     float fahr, celsius;

@@ -2,6 +2,10 @@
 
 #define PASSCHAR ' '
 
+/* 
+Write a program to copy its input to its output, replacing each
+string of one or more balks by a single blank
+*/
 void main()
 {
     int c, last;

@@ -4,7 +4,9 @@
 #define UPPER 300
 #define STEP 20
 
-/* Convert fahr to Celsius*/
+/*
+Program which convert fahr to Celsius
+*/
 void main()
 {
     float fahr;

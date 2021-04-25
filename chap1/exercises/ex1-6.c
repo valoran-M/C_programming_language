@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/* verify that the expression getchar() != EOF is 0 or 1 */
+/*
+Verify that the expression getchar() != EOF is 0 or 1
+*/
 void main()
 {
     int c;

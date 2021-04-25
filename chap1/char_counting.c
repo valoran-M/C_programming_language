@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/* Counitng char */
+/*
+Program which counitng char
+*/
 void main()
 {
     long nc;

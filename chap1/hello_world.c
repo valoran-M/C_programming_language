@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/* print hello, world */
+/*
+Print hello, world
+*/
 void main()
 {
     printf("hello, world\n");    
