@@ -3,6 +3,7 @@
 #define IN 1
 #define OUT 0
 
+/* Counting line word and char*/
 void main()
 {
     int c, nl, nw, nc, state;

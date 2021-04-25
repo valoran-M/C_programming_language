@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+/* Write a program to print a value of EOF */
+void main()
 {
     printf("EOF is %d\n", EOF);
-    return 0;
 }

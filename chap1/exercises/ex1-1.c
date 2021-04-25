@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+/* Run the "hello, world" program*/
+void main()
 {
     printf("hello world\n");
 }

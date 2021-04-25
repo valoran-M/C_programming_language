@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void main(int argc, char const *argv[])
+/* verify that the expression getchar() != EOF is 0 or 1 */
+void main()
 {
     int c;
     while (c = getchar() != EOF)

@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+/* Write a program to print 
+the corresponding Celsius to Fahrenheit*/
+void main()
 {
     float fahr, celsius;
     int lower, upper, step;
@@ -21,6 +23,4 @@ int main(int argc, char const *argv[])
         celsius += step;
     }
     printf("+------------+\n");
-
-    return 0;
 }

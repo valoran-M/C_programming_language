@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+/* Modify the temperature conversion program to
+print heading above the table*/
+void main()
 {
     float fahr, celsius;
     int lower, upper, step;
@@ -22,5 +24,4 @@ int main(int argc, char const *argv[])
     }
     printf("+------------+\n");
 
-    return 0;
 }
