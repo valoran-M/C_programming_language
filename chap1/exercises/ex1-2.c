@@ -1,9 +1,13 @@
+/**
+ * Exercie 1.2
+ * 
+ *  Experiment to find out what happens when printf's 
+ * argument strinf contains \c
+ * 
+ **/
+
 #include <stdio.h>
 
-/*
-Experiment to find out what happens when printf's 
-argument strinf contains \c
-*/
 void main()
 {
     printf("hello world\c");

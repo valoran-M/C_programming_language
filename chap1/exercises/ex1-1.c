@@ -1,8 +1,12 @@
+/**
+ * Exercice 1.1
+ * 
+ * Run the "hello, world" program
+ * 
+ **/
+
 #include <stdio.h>
 
-/*
-Run the "hello, world" program
-*/
 void main()
 {
     printf("hello world\n");

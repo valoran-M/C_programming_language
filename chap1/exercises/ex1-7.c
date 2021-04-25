@@ -1,8 +1,13 @@
+/**
+ * 
+ * Exercice 1.7
+ * 
+ *  Write a program to print a value of EOF
+ * 
+ **/
+
 #include <stdio.h>
 
-/*
-Write a program to print a value of EOF
-*/
 void main()
 {
     printf("EOF is %d\n", EOF);

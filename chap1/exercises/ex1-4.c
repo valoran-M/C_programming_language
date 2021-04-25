@@ -1,9 +1,13 @@
+/**
+ * Exercice 1.4
+ * 
+ *  Write a program to print 
+ * the corresponding Celsius to Fahrenheit
+ * 
+ **/
+
 #include <stdio.h>
 
-/*
-Write a program to print 
-the corresponding Celsius to Fahrenheit
-*/
 void main()
 {
     float fahr, celsius;

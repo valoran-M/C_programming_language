@@ -1,13 +1,17 @@
+/**
+ * Exercice 1.13.a
+ * 
+ *  Whrite a porgram to print a histogram of the lenghts of words
+ * in its input. It is easy to draw the histogram with the bars horizontal.
+ * 
+ **/
+
 #include <stdio.h>
 
 #define MAXWORD 20
 #define IN 1
 #define OUT 0
 
-/*
-Whrite a porgram to print a histogram of the lenghts of words
-in its input. It is easy to draw the histogram with the bars horizontal.
-*/
 void main()
 {
     int c, nw, state, word;
