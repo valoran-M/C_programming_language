@@ -13,7 +13,7 @@ void main()
     int c, i, max;
     int nChar[26];
 
-    for (i = 0; i < 27; i++)
+    for (i = 0; i < 26; i++)
         nChar[i] = 0;
 
     while ((c = getchar()) != EOF)
@@ -26,14 +26,14 @@ void main()
 
     // print vertical histogram
     max = nChar[0];
-    for (i = 0; i <= 26; i++)
+    for (i = 0; i < 26; i++)
         if (max < nChar[i])
             max = nChar[i];
 
     putchar('\n');
     for (max; max > 0; max--)
     {
-        for (i = 0; i <= 26; i++)
+        for (i = 0; i < 26; i++)
         {
             putchar(' ');
             if (nChar[i] >= max)
