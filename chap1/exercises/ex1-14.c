@@ -13,7 +13,7 @@ void main()
     int c, i, max;
     int nChar[26];
 
-    for (i = 0; i < 26; i++)
+    for (i = 0; i < 27; i++)
         nChar[i] = 0;
 
     while ((c = getchar()) != EOF)
