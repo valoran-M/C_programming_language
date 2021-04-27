@@ -14,45 +14,19 @@
 #define MAX 10
 
 int my_getline(char s[], int lim);
+void fold_line(char line[], char fold[], int n_break);
 
 void main()
 {
-    int len, lineLenLimit,i, j, foldCol;
+    int len, lineLenLimit, i, j, foldCol;
     char line[MAXCHAR], outputLine[MAXCHAR];
 
     lineLenLimit = 10;
 
     while ((len = my_getline(line, MAXCHAR)) > 0)
     {
-        for (i = 0; i < len; ++i)
-        {
-            if (i != 0 && (i + 1) % lineLenLimit == 0)
-            {
-                for (j = i; j > 0; --j)
-                    if (line[j] != ' ' && line[j] != '\t')
-                    {
-                        foldCol = j;
-                        break;
-                    }
-
-                for (j = 0; j < foldCol - i + lineLenLimit; ++j)
-                    outputLine[j] = line[j + i - lineLenLimit + 1];
-
-                outputLine[j] = '\n';
-                outputLine[j + 1] = '\0';
-
-                printf("%s", outputLine);
-            }
-            else if (i == len - 1)
-            {
-                for (j = 0; j < i % lineLenLimit; ++j)
-                    outputLine[j] = line[j + i - (i % lineLenLimit)];
-
-                outputLine[j] = '\0';
-                printf("%s", outputLine);
-            }
-        }
-        putchar('\n');
+        fold_line(line, outputLine, 40);
+        printf("%s\n", outputLine);
     }
 }
 
@@ -72,4 +46,46 @@ int my_getline(char s[], int lim)
         i = 0;
     s[i] = '\0';
     return i;
+}
+
+void fold_line(char line[], char fold[], int n_break)
+{
+    int i, j, column, split, last_blank;
+    column = split = last_blank = 0;
+
+    for (i = 0, j = 0; line[i] != '\0'; ++i, ++j)
+    {
+        fold[j] = line[i];
+
+        if (fold[j] == '\n')
+            column = 0;
+
+        column++;
+
+        if (column == n_break - MAX)
+            split = 1;
+
+        if (split && (fold[j] == ' ' || fold[j] == '\t'))
+            last_blank = j;
+
+        if (column == n_break)
+        {
+            if (last_blank)
+            {
+                fold[last_blank] = '\n';
+                column = j - last_blank;
+                last_blank = 0;
+            }
+            else
+            {
+                fold[j++] = '-';
+                fold[j] = '\n';
+
+                column = 0;
+            }
+            split = 0;
+        }
+    }
+
+    fold[j] = '\0';
 }
