@@ -1,8 +1,8 @@
 /**
  * Exercice 1.17
  * 
- *  Write a program to print all input lines that are longer than 80
- * characters.
+ *  Write a program to remove trailing blanks and tabs from each
+ * line of input, and to delete entirely blank lines
  * 
  **/
 
