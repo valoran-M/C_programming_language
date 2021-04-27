@@ -9,7 +9,7 @@
 
 #include <stdio.h>
 
-#define TABSTOP 4
+#define TABSTOP 8
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
     n = 0;
     while ((c = getchar()) != EOF)
     {
-        if (c != '\t' && c != '\n')
+        if (c != '\t')
         {
             n++;
             putchar(c);
