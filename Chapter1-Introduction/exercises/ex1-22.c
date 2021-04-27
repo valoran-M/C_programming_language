@@ -18,10 +18,8 @@ void fold_line(char line[], char fold[], int n_break);
 
 void main()
 {
-    int len, lineLenLimit, i, j, foldCol;
+    int len;
     char line[MAXCHAR], outputLine[MAXCHAR];
-
-    lineLenLimit = 10;
 
     while ((len = my_getline(line, MAXCHAR)) > 0)
     {
