@@ -14,7 +14,7 @@
 #define MAX 10
 
 int my_getline(char s[], int lim);
-void fold_line(char line[], char fold[], int n_break);
+void foldLine(char line[], char fold[], int n_break);
 
 void main()
 {
@@ -23,7 +23,7 @@ void main()
 
     while ((len = my_getline(line, MAXCHAR)) > 0)
     {
-        fold_line(line, outputLine, 40);
+        foldLine(line, outputLine, 40);
         printf("%s\n", outputLine);
     }
 }
@@ -46,7 +46,7 @@ int my_getline(char s[], int lim)
     return i;
 }
 
-void fold_line(char line[], char fold[], int n_break)
+void foldLine(char line[], char fold[], int n_break)
 {
     int i, j, column, split, last_blank;
     column = split = last_blank = 0;
