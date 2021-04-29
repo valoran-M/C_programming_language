@@ -76,24 +76,24 @@ void check_syntax(char str[])
                      str[i - 2] == '\\')
                 single_quotes = 0;
 
-            if (str[i] == '"' && !single_quotes && !double_quotes)
+            if (str[i] == '"' && !single_quotes && !single_quotes)
                 double_quotes = 1;
-            else if (single_quotes &&
+            else if (double_quotes &&
                          str[i] == '\"' &&
-                         str[i - 1] != '\\' ||
-                     str[i - 2] == '\\')
+                         (str[i - 1] != '\\' ||
+                     str[i - 2] == '\\'))
                 double_quotes = 0;
         }
 
         if (!single_quotes && !double_quotes)
         {
-            if (str[i] == '/' && str[i + 1] == '*' && !line_comment)
+            if (str[i] == '*' && str[i - 1] == '/' && !line_comment)
                 block_comment = 1;
-            else if (str[i] == '*' && str[i + 1] == '/')
+            else if (str[i] == '/' && str[i - 1] == '*')
                 block_comment = 0;
 
             if (str[i] == '/' && str[i + 1] == '/' && !block_comment)
-                block_comment = 1;
+                line_comment = 1;
             else if (str[i] == '\n')
                 line_comment = 0;
         }
