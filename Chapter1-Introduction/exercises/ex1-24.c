@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 
-#define MAXCHAR 1000
+#define MAXCHAR 100000
 
 int get_str(char str[], int limit);
 void check_syntax(char str[]);
@@ -76,12 +76,11 @@ void check_syntax(char str[])
                      str[i - 2] == '\\')
                 single_quotes = 0;
 
-            if (str[i] == '"' && !single_quotes && !single_quotes)
+            if (str[i] == '"' && !single_quotes && !double_quotes)
                 double_quotes = 1;
             else if (double_quotes &&
-                         str[i] == '\"' &&
-                         (str[i - 1] != '\\' ||
-                     str[i - 2] == '\\'))
+                     str[i] == '"' &&
+                     (str[i - 1] != '\\' || str[i - 2] == '\\'))
                 double_quotes = 0;
         }
 
