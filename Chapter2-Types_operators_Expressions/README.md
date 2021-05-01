@@ -27,22 +27,22 @@
 ### Constants
 
 ```c    
-        1234            //int constant
-        123456789L      //long constant
-        123456789UL     //unsigned long constant
-        123.4 || 1e-2   //double
-        123.4L          //long double
-        123.4F          //float
+    1234            //int constant
+    123456789L      //long constant
+    123456789UL     //unsigned long constant
+    123.4 || 1e-2   //double
+    123.4L          //long double
+    123.4F          //float
 
-        31 == 037       //octal
-        31 == 0x1F      //hex
-        0xFUL           //unsigned long  15
+    31 == 037       //octal
+    31 == 0x1F      //hex
+    0xFUL           //unsigned long  15
 
-        #define VTAB '\013'
-        #define BELL '\007'
+    #define VTAB '\013'
+    #define BELL '\007'
 
-        #define VTAB '\xb'
-        #define BELL '\x7'
+    #define VTAB '\xb'
+    #define BELL '\x7'
 ```
 
 |   |   |
@@ -54,9 +54,35 @@
 |\r|carriage return|
 |\t|horizontal tab|
 |\v|vertiacl tab|
+|\0|character 0|
 |\\\\|backslash|
 |\\?|question mark|
 |\\'|single quote|
 |\\"|double quote|
 |\\ooo|octal number|
 |\xhh|hexadecimal number|
+
+```c
+    strlen("1234") == 4;
+
+    int strlen(char s[]) // define in <string.h>
+    {
+        int i;
+
+        while(s[i] != '0')
+            i++;
+        return i;
+    }
+```
+
+```c
+    enum boolean { NO, YES };
+    NO == 0;
+    YES == 1;
+
+    enum escpaes { BELL = '\a', BACKSPACE = '\b', TAB = '\t',
+                    NEWLINE = '\n', VTAB = '\v', RETURN = '\r' };
+
+    enum months { JAN = 1, FAB, MAR, APR, MAY, JUN,
+                  JUL, AUG, SEP, OCT, NOV, DEC };
+```
