@@ -117,3 +117,5 @@
     ! invers 0 or 1.
 
 return 0 or 1.
+
+### TYPES CONVERSIONS
