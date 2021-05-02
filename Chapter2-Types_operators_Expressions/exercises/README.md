@@ -7,3 +7,8 @@
     values from standard headers and by direct computation.
     Harder if you compute them : determine the range of the various floating-
     point types.
+
+## Exercice 2.2
+
+    Write a loop equivalent to the  for loop above
+    without using && or || 
