@@ -136,3 +136,30 @@ You can use cast opertor
 exercice :
 [ex2.3 : hexa in sqrt](exercises/ex2-3.c)
 
+### Increment and Decrement Operators
+
+We have ++ and -- operator for Increment and Decrement.
+
+
+We will see examples for the ++ valid for the --
+
+prefix : 
+```c
+    n = 5;
+    x = n++; // x = 5
+
+    n = 5;
+    x = ++n; //x = 6
+
+    if(s[i] != c)
+    {
+        s[j] = s[i];
+        j++;
+    }
+    // equivalent
+    if(s[i] != c)
+        s[j++] = s[i];
+```
+
+[squeeze](4-squeeze.c)
+[strcat](5-strcat.c)
