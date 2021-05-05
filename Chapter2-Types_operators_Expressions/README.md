@@ -168,3 +168,23 @@ Exercices:
 
 [ex2.3 : squeeze](exercises/ex2-4.c)
 [ex2.3 : any](exercises/ex2-5.c)
+
+### Bitwise Operator
+
+applied to : char, short, int and long, signed or unsigned
+
+    &   :   bitwise AND
+    |   :   bitwise inclusive OR
+    ^   :   bitwise exclusive OR
+    <<  :   left shift
+    >>  :   right shift
+    ~   :   one's complement (unary)
+
+&& and ||
+
+    1 & 2 = 0
+    1 && 2 = 1
+
+    1 | 2 = 2
+    1 || 2 = 1
+
