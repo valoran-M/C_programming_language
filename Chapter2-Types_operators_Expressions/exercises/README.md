@@ -11,4 +11,10 @@
 ## Exercice 2.2
 
     Write a loop equivalent to the  for loop above
-    without using && or || 
+    without using && or ||
+
+## Exercice 2.3
+
+    Write the fonction htoi(s), which converts a string of hexadcimal
+    digits (including an optional 0x or 0X) int equivalent ineger value.
+    The allowable digits are 0 through 9, a through f, and A through F.

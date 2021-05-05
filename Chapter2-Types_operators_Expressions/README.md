@@ -23,6 +23,8 @@
     signed
     unsigned    // >= 0
 ```
+exercice:
+[size type](exercises/ex2-1.c)
 
 ### Constants
 
@@ -118,6 +120,9 @@
 
 return 0 or 1.
 
+exercice :
+[logical](exercises/ex2-2.c)
+
 ### TYPES CONVERSIONS
 
 You can check 
@@ -127,4 +132,7 @@ You can check
 You can use cast opertor
         
     sqrt((double) n);
+
+exercice :
+[ex2.3 : hexa in sqrt](exercises/ex2-3.c)
 

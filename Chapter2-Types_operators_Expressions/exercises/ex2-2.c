@@ -9,6 +9,7 @@
  *      s[i++] = c;
  * 
  **/
+
 #include <stdio.h>
 
 #define MAXCHAR 1000
