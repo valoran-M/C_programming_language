@@ -18,3 +18,12 @@
     Write the fonction htoi(s), which converts a string of hexadcimal
     digits (including an optional 0x or 0X) int equivalent ineger value.
     The allowable digits are 0 through 9, a through f, and A through F.
+
+## Exercice 2.4
+
+    Write an alternate version of squeeze(s1, s2) that deletes in
+    string s1 that matches any character in the string s2.
+
+## Exercice 2.5
+
+    
