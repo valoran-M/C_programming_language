@@ -30,3 +30,20 @@
     int the string s1 where any character from the string s2 occurs, or
     -1 is s1 contains no characteers from s2. (The standard library funtion)
     strpbrk does the same job but returns a pointer to location) 
+
+## Exercice 2.6
+
+    Write a function stebits(x, p, n, y) that return x with
+    the n bits tha begin at position p set to the rightmost
+    n bits of y, leaving the other bits unchanged.
+
+## Exercice 2.7
+
+    Wrtie a funtion invert(x, p, n) that return x with 
+    the n that begin at position p set to the rightmost n
+    bits of y, leaving the other bits unchanged.
+
+## Exercice 2.8
+
+    Write a function reightrot(x, n) that return the value of the
+    integer x rotated to the right by n bit position
