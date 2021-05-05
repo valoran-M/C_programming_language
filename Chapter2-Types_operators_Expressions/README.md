@@ -163,3 +163,8 @@ prefix :
 
 [squeeze](4-squeeze.c)
 [strcat](5-strcat.c)
+
+Exercices:
+
+[ex2.3 : squeeze](exercises/ex2-4.c)
+[ex2.3 : any](exercises/ex2-5.c)

@@ -26,4 +26,7 @@
 
 ## Exercice 2.5
 
-    
+    Write the function any(s1, s2), wich returns the first loacation
+    int the string s1 where any character from the string s2 occurs, or
+    -1 is s1 contains no characteers from s2. (The standard library funtion)
+    strpbrk does the same job but returns a pointer to location) 
