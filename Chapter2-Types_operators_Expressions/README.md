@@ -119,3 +119,12 @@
 return 0 or 1.
 
 ### TYPES CONVERSIONS
+
+You can check 
+1. [convert char* to int](1-convert_s_to_integer.c) 
+1. [lower convertion](2-lower.c)
+
+You can use cast opertor
+        
+    sqrt((double) n);
+
