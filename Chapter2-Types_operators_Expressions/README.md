@@ -23,7 +23,8 @@
     signed
     unsigned    // >= 0
 ```
-exercice:
+exercice :
+
 [size type](exercises/ex2-1.c)
 
 ### Constants
@@ -121,6 +122,7 @@ exercice:
 return 0 or 1.
 
 exercice :
+
 [logical](exercises/ex2-2.c)
 
 ### TYPES CONVERSIONS
@@ -134,6 +136,7 @@ You can use cast opertor
     sqrt((double) n);
 
 exercice :
+
 [ex2.3 : hexa in sqrt](exercises/ex2-3.c)
 
 ### Increment and Decrement Operators
@@ -164,7 +167,7 @@ prefix :
 [squeeze](4-squeeze.c)
 [strcat](5-strcat.c)
 
-Exercices:
+Exercices :
 
 [ex2.3 : squeeze](exercises/ex2-4.c)
 [ex2.3 : any](exercises/ex2-5.c)
@@ -188,3 +191,31 @@ applied to : char, short, int and long, signed or unsigned
     1 | 2 = 2
     1 || 2 = 1
 
+[getbits](6-getbits.c)
+
+
+Exercices :
+
+[ex2.6 : setbits](exercises/ex2-6.c)
+[ex2.7 : invert](exercises/ex2-7.c)
+[ex2.8 : reightrot](exercises/ex2-8.c)
+
+
+### Assignment Operators and Expressions
+
+```c
+    i = i + 2;
+    i += 2:         // same
+```
+
+    exp1 op= exp2
+    exp1 = exp1 op exp2
+
+op :
+    + - * / % << >> & ^ |
+
+[bitcount](7-bitcount.c)
+
+Exercice :
+
+[ex2.9 : reightrot](exercises/ex2-9.c)
