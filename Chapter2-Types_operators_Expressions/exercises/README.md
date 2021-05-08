@@ -53,3 +53,9 @@
     In two's complement number systeme, x &= (x-1) delets
     the rigthmost 1-bit in x. Explain why. Use this observation 
     to write a faster version of bitcount()
+
+## Exercice 2.10
+
+    Rewrite the function lower, which converts
+    upper case letters to lower case, with a conditional
+    expression instead of if-else
