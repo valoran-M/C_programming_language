@@ -47,3 +47,9 @@
 
     Write a function reightrot(x, n) that return the value of the
     integer x rotated to the right by n bit position
+
+## Exercice 2.9
+
+    In two's complement number systeme, x &= (x-1) delets
+    the rigthmost 1-bit in x. Explain why. Use this observation 
+    to write a faster version of bitcount()
