@@ -219,3 +219,16 @@ op :
 Exercice :
 
 [ex2.9 : reightrot](exercises/ex2-9.c)
+
+### Conditional Expressions
+
+```c
+    if(a > z)
+        z = a;
+    else
+        z = b
+
+    // ?: -> (expr1) ? expr2 : expr3
+
+    z = (a > z) ? a : b;
+```
