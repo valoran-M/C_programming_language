@@ -54,3 +54,24 @@ Exercice :
 Exercice :
 
 [ex3-2](exercises/ex3-2.c)
+
+### Loops - While and For
+
+```c
+    while (expression)
+        statement
+
+    for (expr1; expr2; expr3)
+        statement
+    
+    // equivalent to
+
+    expr1;
+    while (expr2)
+    {
+        statment
+        expr3;
+    }
+```
+
+[atoi](3-atoi.c)
