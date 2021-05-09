@@ -51,3 +51,6 @@ Exercice :
 
 [switch count](2-switch_count.c)
 
+Exercice :
+
+[ex3-2](exercises/ex3-2.c)
