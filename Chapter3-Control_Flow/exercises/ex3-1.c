@@ -1,3 +1,13 @@
+/**
+ * Exercice 3.1
+ * 
+ *  Our binaray search makes two tests inside loop,
+ * when one would suffice (at the price of more tests outside).
+ * Write a version with only one test inside the loop and measure 
+ * the difference in run-time
+ * 
+ **/
+
 #include <stdio.h>
 
 int binsearch(int x, int v[], int n);
@@ -21,8 +31,10 @@ int binsearch(int x, int v[], int n)
         mid = (low + high) / 2;
         if (x < v[mid])
             high = mid - 1;
-        else
+        else if (x > v[mid])
             low = mid + 1;
+        else /* found match */
+            return mid;
     }
-    return mid; /* no match */
+    return -1; /* no match */
 }
