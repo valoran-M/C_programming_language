@@ -75,3 +75,5 @@ Exercice :
 ```
 
 [atoi](3-atoi.c)
+[shellsort](4-shellsort.c)
+[reverse](5-reverse.c)
