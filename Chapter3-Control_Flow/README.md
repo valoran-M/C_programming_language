@@ -77,3 +77,18 @@ Exercice :
 [atoi](3-atoi.c)
 [shellsort](4-shellsort.c)
 [reverse](5-reverse.c)
+
+Exercice :
+
+[ex3-3](exercises/ex3-3.c)
+
+### Loops - Do while
+
+```c
+
+    do
+        statement
+    while (expression);
+```
+
+[itoa](6-itoa.c)
