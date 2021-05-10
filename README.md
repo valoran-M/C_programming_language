@@ -57,3 +57,15 @@ My notes on the book The C programming language (ANSI C).
 1. Goto and Labels
 
 [Cahpter4: Functions And Program Strucutre](Chapter4-Functions_And_Program_Strucutre)
+
+1. Basics of Function
+1. Functions Returning Non-Integers
+1. External Varaibles
+1. Scope Rules
+1. Header Files
+1. Static Varaibles
+1. Register Variables
+1. Block Structure
+1. Initialization
+1. Recursion
+1. The C preprocessor
