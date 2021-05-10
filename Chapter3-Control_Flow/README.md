@@ -100,3 +100,14 @@ Exercice :
 exit from for, while, and do while
 
 [tim](7-trim.c)
+
+    continue
+
+go to the next iteration of for, while, do
+
+```c
+    for (i + 0; i < n; i++)
+        if (a[i] < 0) /* skipe negative elements */
+            continue;
+        /* do positive elements */
+```
