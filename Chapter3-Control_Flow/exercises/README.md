@@ -31,3 +31,10 @@
     the value of n equal to -(2^wordsize-1). Explain why not.
     Modify it to print the value correctly, regardless of the 
     machine on which it runs.
+
+## Exercice 3.5
+
+    Write the function itob(n, s, b) that convert the ineger n
+    into a base b character representation in string s. In 
+    particular, itob(n, s, 16) format n as hexadecimal 
+    integer in s
