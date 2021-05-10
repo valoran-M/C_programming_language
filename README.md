@@ -1,7 +1,7 @@
 <h1 align="center">
     The C programming language
     <br>
-    <img src="./c_logo.svg">
+    <img src="./c_logo.png">
     </br>
 </h1>
 
