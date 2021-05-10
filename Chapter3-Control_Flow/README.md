@@ -111,3 +111,27 @@ go to the next iteration of for, while, do
             continue;
         /* do positive elements */
 ```
+
+### Goto and Labels
+
+```c
+    for (...)
+        for (...)
+            if (disaster)
+                goto error;
+
+error:
+    clean up the mess
+```
+
+real example :
+
+```c
+    for (i = 0; i < n; i++)
+        for (j = 0; j < m; j++)
+            if (a[i] == b[j])
+                goto found;
+    /* didn't find any common element */
+found
+    /* got one: a[i] == b[j]*/
+```
