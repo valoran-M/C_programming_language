@@ -38,3 +38,10 @@
     into a base b character representation in string s. In 
     particular, itob(n, s, 16) format n as hexadecimal 
     integer in s
+
+## Exercie 3.6
+
+    Write a version of itoa that accpets three arguments instead
+    of two. The third argument is a minimum fiels width; the 
+    converted number must be padded with blanks on the left
+    if necessary to make it wide enough.
