@@ -92,3 +92,11 @@ Exercice :
 ```
 
 [itoa](6-itoa.c)
+
+### Break and Continue
+
+    break
+
+exit from for, while, and do while
+
+[tim](7-trim.c)
