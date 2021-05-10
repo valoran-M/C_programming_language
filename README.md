@@ -14,3 +14,7 @@ My notes on the book The C programming language (ANSI C).
     <img src="./book.jpg">
     </br>
 </h1>
+
+## Summary
+
+[Chapter1: Introduction](Chapter1-Introduction)
