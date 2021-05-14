@@ -14,3 +14,6 @@
 [grep](1-grep.c)
 [getline](2-getline.c)
 [strindex](3-strindex.c)
+
+### Functions Returning Non-integers
+
