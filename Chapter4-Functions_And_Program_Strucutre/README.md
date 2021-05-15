@@ -17,3 +17,13 @@
 
 ### Functions Returning Non-integers
 
+```c
+    void main()
+    {
+        double sum, atof(char s[]); // atof :   function return double
+                                    //          and take char * in 
+                                    //          parameter 
+    }
+```
+
+[atof](4-atof.c)
