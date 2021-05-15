@@ -27,3 +27,13 @@
 ```
 
 [atof](4-atof.c)
+[rudimentary calculator](5-rud_calc.c)
+
+```c
+    /* atoi: convert string s to integer using atof*/
+    int atoi(char s[])
+    {
+        double atof(char s[]);
+
+        return (int) atof(s);
+    }
