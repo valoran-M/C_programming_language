@@ -15,6 +15,10 @@
 [getline](2-getline.c)
 [strindex](3-strindex.c)
 
+Exercice:
+
+[ex4-1](exercises/ex4-1.c)
+
 ### Functions Returning Non-integers
 
 ```c
@@ -37,3 +41,6 @@
 
         return (int) atof(s);
     }
+```
+
+[ex4-2](exercises/ex4-1.c)
