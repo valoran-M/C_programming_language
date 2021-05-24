@@ -5,8 +5,15 @@
     Write the function strrindex(s,t), which returns the position
     of the rightmost occurrence of t in s, or -1 if there is none
 
-## 
+## Exercice 4.2
+
     Extend atof to handle scientific notation of the from
         123.45e-6
     where a floating-point number may be followed by e or E 
-    and optionally signed exponent
+    and optionally signed exponentù
+
+## Exercice 4.3
+
+    Given the basic framework, it's straightforward to extend
+    the calculator. Add the modulus (%) operator and provision
+    for negative numbers 
