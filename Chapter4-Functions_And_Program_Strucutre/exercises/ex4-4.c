@@ -37,6 +37,19 @@ double last(void)
     return 0.0;
 }
 
+// swap : the last two elements of the stack
+void swap(void)
+{
+    double op = val[sp - 1];
+    if (sp > 1)
+    {
+        val[sp - 1] = val[sp - 2];
+        val[sp - 2] = op;
+    }
+    else
+        printf("error: stack is not big enough\n");
+}
+
 */
 
 /* reverse Polish calculator */
