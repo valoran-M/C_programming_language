@@ -1,12 +1,21 @@
+/**
+ * Exercice 4.3:
+ * 
+ *  Given the basic framework, it's straightforward to extend
+ * the calculator. Add the modulus (%) operator and provision
+ * for negative numbers 
+ * 
+ **/
+
 #include <stdio.h>
 #include <stdlib.h> /* for atof() */
-#include "10-calc.h"
+#include "../10-calc.h"
 
 #define MAXOP 100 /* max size of operand or operator*/
 
 /*
     Compilation : 
-        cc 6-polish_calc.c 7-stack.c 8-getop.c 9-getch.c
+        cc ex4-3.c ../7-stack.c ../8-getop.c ../9-getch.c
 */
 
 /* reverse Polish calculator */
@@ -58,7 +67,7 @@ int main()
             break;
 
         default:
-			printf("error: unknown command %s\n", s);
+            printf("error: unknown command %s\n", s);
             break;
         }
     }

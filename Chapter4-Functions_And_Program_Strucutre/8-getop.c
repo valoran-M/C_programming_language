@@ -11,10 +11,18 @@ int getop(char s[])
         ;
     s[1] = '\0';
 
+    i = 0;
+    if (c == '-') /* check sign */
+        if (!isdigit(s[++i] = c = getch()))
+        {
+            ungetch(c);
+            c = s[0]; /* not a sign */
+        }
+
     if (!isdigit(c) && c != '.')
         return c; /* not a number */
-    i = 0;
-    if (isdigit(c)) /* collect integer part */
+
+    if (isdigit(c))
         while (isdigit(s[++i] = c = getch()))
             ;
     if (c == '.') /* collect fraction part */
