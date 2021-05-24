@@ -17,3 +17,9 @@
     Given the basic framework, it's straightforward to extend
     the calculator. Add the modulus (%) operator and provision
     for negative numbers 
+
+## Exercice 4.4 
+
+    Add commands to print the top element of the stack without pop
+    ping, to duplicate it, and to sawp the top two elements.
+    Add a command to clear stack.

@@ -5,3 +5,6 @@ void push(double);
 double pop(void);
 int getch(void);
 void ungetch(int);
+void clear(void);
+double last(void);
+void swap(void);
