@@ -1,56 +1,22 @@
 /**
- * Exercice 4.4:
+ * Exercice 4.5:
  * 
- *  Add commands to print the top element of the stack without pop
- * ping, to duplicate it, and to sawp the top two elements.
- * Add a command to clear stack.
+ *  Add access to library functions like sin, exp, and pow.
+ * See <math.h> in Appendix B, Section 4
  * 
  **/
 
 /*
     Compilation : 
-        cc ex4-4.c ../7-stack.c ../8-getop.c ../9-getch.c
+        cc ex4-5.c ../7-stack.c ../8-getop.c ../9-getch.c -lm
 */
 
 #include <stdio.h>
 #include <stdlib.h> /* for atof() */
+#include <math.h>
 #include "../10-calc.h"
 
 #define MAXOP 100 /* max size of operand or operator*/
-
-/* function written in this exercise in another file
-
-// clear: clear stack 
-void clear(void)
-{
-    for (; sp > 0; sp--)
-        ;
-}
-
-// last : return last item in stack
-double last(void)
-{
-    if (sp > 0)
-        return val[sp - 1];
-    else
-        printf("error: stack empty\n");
-    return 0.0;
-}
-
-// swap : the last two elements of the stack
-void swap(void)
-{
-    double op = val[sp - 1];
-    if (sp > 1)
-    {
-        val[sp - 1] = val[sp - 2];
-        val[sp - 2] = op;
-    }
-    else
-        printf("error: stack is not big enough\n");
-}
-
-*/
 
 /* reverse Polish calculator */
 int main()
@@ -94,6 +60,19 @@ int main()
                 push((long)pop() % (long)op2);
             else
                 printf("error: zero divisor\n");
+            break;
+
+        case '^':
+            op2 = pop();
+            push(pow(pop(), op2));
+            break;
+
+        case '~':
+            push(sin(pop()));
+            break;
+
+        case 'e':
+            push(exp(pop()));
             break;
 
         case 'c':

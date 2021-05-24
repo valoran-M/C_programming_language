@@ -23,3 +23,8 @@
     Add commands to print the top element of the stack without pop
     ping, to duplicate it, and to sawp the top two elements.
     Add a command to clear stack.
+
+## Exercice 4.5
+
+    Add access to library functions like sin, exp, and pow.
+    See <math.h> in Appendix B, Section 4

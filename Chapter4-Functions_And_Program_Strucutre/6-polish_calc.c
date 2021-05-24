@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h> /* for atof() */
+#include <math.h>
 #include "10-calc.h"
 
 #define MAXOP 100 /* max size of operand or operator*/
 
 /*
     Compilation : 
-        cc 6-polish_calc.c 7-stack.c 8-getop.c 9-getch.c
+        cc 6-polish_calc.c 7-stack.c 8-getop.c 9-getch.c -lm
 */
 
 /* reverse Polish calculator */
@@ -51,6 +52,19 @@ int main()
                 push((long)pop() % (long)op2);
             else
                 printf("error: zero divisor\n");
+            break;
+
+        case '^':
+            op2 = pop();
+            push(pow(pop(), op2));
+            break;
+
+        case '~':
+            push(sin(pop()));
+            break;
+
+        case 'e':
+            push(exp(pop()));
             break;
 
         case 'c':
