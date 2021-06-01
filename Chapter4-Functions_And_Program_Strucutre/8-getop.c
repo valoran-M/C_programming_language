@@ -12,6 +12,17 @@ int getop(char s[])
     s[1] = '\0';
 
     i = 0;
+
+    if(islower(c))
+    {
+        s[0] = toupper(c);
+        return VARSET;
+    }else if(isupper(c))
+    {
+        s[0] = c;
+        return VARGET;
+    }
+
     if (c == '-') /* check sign */
         if (!isdigit(s[++i] = c = getch()))
         {

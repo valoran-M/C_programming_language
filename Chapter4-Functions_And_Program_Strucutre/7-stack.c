@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// stack
+
 #define MAXVAL 100 /* maximum depth of val stack */
 
 int sp = 0;         /* next free stack position */
@@ -52,4 +54,20 @@ void swap(void)
     }
     else
         printf("error: stack is not big enough\n");
+}
+
+// Variable
+
+#define MAXVAR 26
+
+double var[MAXVAR]; /* var stack */
+
+double var_get(int varindex)
+{
+    return var[varindex];
+}
+
+void var_set(int varindex, double number)
+{
+    var[varindex] = number;
 }
