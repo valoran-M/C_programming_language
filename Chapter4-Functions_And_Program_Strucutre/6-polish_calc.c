@@ -85,6 +85,15 @@ int main()
             printf("\t%.8g\n", pop());
             break;
 
+        case VARSET: /* lower is for set */
+            var_set(s[0] - 'A', pop());
+            printf("\nvariable %c: %.3f\n", s[0], var_get(s[0] - 'A'));
+            break;
+
+        case VARGET: /* upper is for get */
+            push(var_get(s[0] - 'A'));
+            break;
+
         default:
             printf("error: unknown command %s\n", s);
             break;
