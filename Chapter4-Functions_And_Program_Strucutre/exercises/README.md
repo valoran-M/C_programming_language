@@ -28,3 +28,17 @@
 
     Add access to library functions like sin, exp, and pow.
     See <math.h> in Appendix B, Section 4
+
+## Exercice 4.6:
+
+    Add commands for handling variables. 
+    (It's easy to provide twenty-six varaibles 
+    with single-letter names.) Add a varaible
+    for the most recently printed value.
+
+## Exercice 4.7:
+
+    Write a routine unget(s) that will push back an 
+    entire string onto the input. Should ungets know 
+    about buf and bufp, or should it just use getch 
+    ungetch ?
