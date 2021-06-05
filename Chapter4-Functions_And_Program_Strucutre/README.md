@@ -43,7 +43,7 @@ Exercice:
     }
 ```
 
-[ex4-2](exercises/ex4-1.c)
+[ex4-2](exercises/ex4-2.c)
 
 ### External Variables
 
@@ -85,3 +85,20 @@ Exercice:
 
     // routines called by getop()
 ```
+
+[polish calc](6-polish_calc.c)
+[stack](7-stack.c)
+[getop](8-getop.c)
+[getch](9-getch.c)
+[header](10-calc.h)
+
+Exercices:
+
+[ex4-3](exercises/ex4-3.c)
+[ex4-4](exercises/ex4-4.c)
+[ex4-5](exercises/ex4-5.c)
+[ex4-6](exercises/ex4-6.c)
+[ex4-7](exercises/ex4-7.c)
+[ex4-8](exercises/ex4-8.c)
+[ex4-9](exercises/ex4-9.c)
+[ex4-10](exercises/ex4-10.c)
