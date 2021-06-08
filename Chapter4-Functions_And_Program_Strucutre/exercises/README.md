@@ -42,3 +42,8 @@
     entire string onto the input. Should ungets know 
     about buf and bufp, or should it just use getch 
     ungetch ?
+
+## Exercice 4.8:
+
+    Suppose that ther will never bo more than one character 
+    of pushback. Modify getch and ungetch accordingly. 

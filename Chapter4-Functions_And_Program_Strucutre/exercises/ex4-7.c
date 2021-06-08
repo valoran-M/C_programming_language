@@ -23,17 +23,10 @@ int bufp = 0;
 
 int main(void)
 {
-    int c, i;
-    char s[MAXLINE];
-
-    for (i = 0; (s[i] = getch()) != '\n'; i++)
-        ;
-    s[++i] = '\n';
-    s[i] = '\0';
-    ungets(s);
-
-    while ((c = getch()) != EOF)
-        putchar(c);
+    ungets("Test");
+    while (bufp > 0)
+        printf("%c", getch());
+    putchar('\n');
     return 0;
 }
 
