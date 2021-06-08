@@ -86,7 +86,7 @@ int main()
                 break;
 
             case '\n':
-                printf("\t%.8g\n", pop());
+                printf("\t%.8g\n", last());
                 break;
 
             case VARSET: /* lower is for set */
