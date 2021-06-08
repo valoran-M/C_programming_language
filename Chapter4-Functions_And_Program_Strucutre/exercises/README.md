@@ -46,4 +46,10 @@
 ## Exercice 4.8:
 
     Suppose that ther will never bo more than one character 
-    of pushback. Modify getch and ungetch accordingly. 
+    of pushback. Modify getch and ungetch accordingly.
+
+## Exercice 4.9:
+ 
+    Our getch and ungetch do not handle a pushed-back EOF
+    correctly. DEcied what their properties ought to be if 
+    an EOF is pushed back, then implement your design
