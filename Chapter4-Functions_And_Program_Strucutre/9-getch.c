@@ -17,3 +17,14 @@ void ungetch(int c) /* push character back on input */
     else
         buf[bufp++] = c;
 }
+
+int getLine(char s[], int lim)
+{
+    int c = 0, i = 0;
+    for (i = 0; (c = s[i] = getchar()) != EOF && c != '\n' && --lim > 0; i++)
+        ;
+    if (c == '\n')
+        s[i++] = c;
+    s[i] = '\0';
+    return i;
+}

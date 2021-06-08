@@ -53,3 +53,10 @@
     Our getch and ungetch do not handle a pushed-back EOF
     correctly. DEcied what their properties ought to be if 
     an EOF is pushed back, then implement your design
+
+## Exercice 4.10:
+
+    An alternate organization uses getline to 
+    read an entire input line; this makes getch and 
+    ungetch unnecessary. Revise the calculator to 
+    use this approach.

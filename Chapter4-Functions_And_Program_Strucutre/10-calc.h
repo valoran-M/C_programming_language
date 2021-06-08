@@ -2,11 +2,12 @@
 #define VARSET '1'
 #define VARGET '2'
 
-int getop(char s[]);
+int getop(char s[], char line[],  int *line_i);
 void push(double);
 double pop(void);
 int getch(void);
 void ungetch(int);
+int getLine(char[], int);
 void clear(void);
 double last(void);
 void swap(void);
