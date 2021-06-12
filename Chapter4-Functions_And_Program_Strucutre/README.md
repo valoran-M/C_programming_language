@@ -102,3 +102,38 @@ Exercices:
 [ex4-8](exercises/ex4-8.c)
 [ex4-9](exercises/ex4-9.c)
 [ex4-10](exercises/ex4-10.c)
+
+### Scope Rules
+
+```c
+    main() { ... }
+
+    int sp = 0;
+    double val[MAXVAL];
+
+    void push(double f) { ... }
+
+    double pop(void) { ... }
+```
+
+sp and val are not accessible in the hand and in other files
+
+##### extern
+
+```c
+// file 1
+
+    // defined
+    extern int sp;
+    extern double val[];
+
+    void push(double f) { ... }
+
+    double pop(void) { ... }
+
+// file 2
+
+    // initialized
+    int sp = 0;
+    double val[MAXVAL];
+```

@@ -82,7 +82,7 @@ int main()
                 break;
 
             case '?':
-                printf("\t%.8g\n", last());
+                printf("\t%.8g\n", pop());
                 break;
 
             case '\n':
