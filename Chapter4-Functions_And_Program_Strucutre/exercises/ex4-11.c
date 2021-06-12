@@ -20,29 +20,12 @@ int getop(char s[])
     static int buf = EOF;
     int i, c, c2;
 
-    // if (buf == EOF)
-    //     c = getch();
-    // else {
-    //     c = buf;
-    //     buf = EOF;
-    // }
-
     while ((s[0] = c = (buf == EOF ? getch() : buf)) == ' ' || c == '\t')
         buf = EOF;
     buf = EOF;
     s[1] = '\0';
 
     i = 0;
-    if (isalpha(c))
-    {
-        while (isalpha(s[++i] = c = (buf == EOF ? getch() : buf)))
-            buf = EOF;
-        buf = EOF;
-        s[i] = '\0';
-        if (c != EOF)
-            buf = c;
-        return MATHLIB;
-    }
 
     if (!isdigit(c) && c != '.' && c != '-')
     {
@@ -77,12 +60,14 @@ int getop(char s[])
         {
             buf = EOF;
         }
+
     buf = EOF;
     if (c == '.') /* collect fraction part */
         while (isdigit(s[++i] = c = (buf == EOF ? getch() : buf)))
             buf = EOF;
     buf = EOF;
     s[i] = '\0';
+    
     if (c != EOF)
         buf = c;
     return NUMBER;
