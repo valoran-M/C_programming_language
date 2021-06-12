@@ -90,7 +90,6 @@ Exercice:
 [stack](7-stack.c)
 [getop](8-getop.c)
 [getch](9-getch.c)
-[header](10-calc.h)
 
 Exercices:
 
@@ -137,3 +136,13 @@ sp and val are not accessible in the hand and in other files
     int sp = 0;
     double val[MAXVAL];
 ```
+
+### Header Files
+
+
+You can write your declarations in a ".h" header file and you can include it with #include "path"
+
+[header](10-calc.h)
+
+### Static Variables
+

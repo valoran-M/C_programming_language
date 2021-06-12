@@ -60,3 +60,8 @@
     read an entire input line; this makes getch and 
     ungetch unnecessary. Revise the calculator to 
     use this approach.
+
+## Exercice 4.11:
+
+    Modify getop so that it doesn't need to use ungetch.
+    hint: use an internal static variable
