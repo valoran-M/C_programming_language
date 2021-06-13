@@ -65,3 +65,14 @@
 
     Modify getop so that it doesn't need to use ungetch.
     hint: use an internal static variable
+
+## Exercice 4.12:
+
+    Adapt the ideas of printd to write a recurive version
+    of itoa; that is, convert an integer into a string 
+    by calling a recursive routine.
+
+## Exercice 4.13:
+
+    Write a recursive version of the function reverse(s),
+    which reverses the string s int place. 
