@@ -156,7 +156,7 @@ The static keyword reduces the visibility of the element.
 
 * For local static variables it acts like global variables accessible only in the block
 
-Exercices:
+Exercice:
 
 [ex4-11](exercises/ex4-11.c)
 
@@ -256,3 +256,8 @@ Example:
 
 [printd](11-printd.c)
 [qsort](12-qsort.c)
+
+Exercices:
+
+[ex4-12](exercises/ex4-12.c)
+[ex4-13](exercises/ex4-13.c)
