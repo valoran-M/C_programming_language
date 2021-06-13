@@ -261,3 +261,29 @@ Exercices:
 
 [ex4-12](exercises/ex4-12.c)
 [ex4-13](exercises/ex4-13.c)
+
+### The C preprocessor
+
+#### File inclusion
+
+```c
+#include "filename"
+
+// or
+
+#include <filename>
+```
+
+Is remplece by the contents of the file *filname*.
+
+* If the *filname* is quoted searching for the file typically
+begins where the source program was found
+
+* If bale is enclosed in < and >, searching fllolw and implementation-defined rule to find the file.
+
+#### Macro Substitution
+
+```c
+#define name replacement text
+```
+
