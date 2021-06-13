@@ -254,3 +254,5 @@ C functions may be used recursively; thaht is, a function may call itself either
 
 Example:
 
+[printd](11-printd.c)
+[qsort](12-qsort.c)
