@@ -38,8 +38,10 @@ int itoar(int n, char s[], int i)
         s[i++] = '-';
         n = -n;
     }
+
     if (n / 10)
         i = itoar(n / 10, s, i);
+    
     s[i++] = n % 10 + '0';
     s[i] = '\0';
     return i;
