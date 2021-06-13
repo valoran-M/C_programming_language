@@ -146,3 +146,111 @@ You can write your declarations in a ".h" header file and you can include it wit
 
 ### Static Variables
 
+```c
+static
+```
+
+The static keyword reduces the visibility of the element.
+
+* For global static variables they are only accessible in the file.
+
+* For local static variables it acts like global variables accessible only in the block
+
+Exercices:
+
+[ex4-11](exercises/ex4-11.c)
+
+### Register Variables
+
+```c
+register
+```
+
+Indicates to the compiler to reserve a processor register for the management of this variable.
+
+*very little advised*
+
+### Block Structure
+
+```c
+{
+    // in the block
+}
+// outside the block
+```
+
+example with variables
+
+```c
+if( n > 0 )
+{
+    int i;  /* declare a new i */
+
+    for ( i = 0; i < n; i++)
+        ...
+}
+```
+
+the variable i is accessible in the block and in the for loop because it is declared before
+
+```c
+int x;
+int y;
+
+f(double x)
+{
+    double y;
+    ...
+}
+```
+
+in f the variables x and y are the variables declared with double. Outside we find the int declare above.
+
+### Initialization
+
+Scalar variables may be initialized when they are defined, by foloowing the name withe an equals sign and an expression.
+
+```c
+    int x = 1;
+    char squote = '\'';
+    long day = 1000L * 60L* 60L * 24L;
+```
+
+For example, the initializations of the binary search program could be written as
+
+```c
+int binsearch(int x, int v[], int n)
+{
+    int low = 0;
+    int high = n - 1;
+    int mid;
+    ...
+}
+
+int binsearch(int x, int v[], int n)
+{
+    int low, high, mid;
+
+    low = 0;
+    high = n - 1;
+    ...
+}
+```
+
+##### Array
+
+```c
+int days[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+
+char pattern[] = "ould"
+// equivalent
+char pattern[] = { 'o', 'u', 'l', 'd', '\0' };
+```
+
+### Recursion
+
+C functions may be used recursively; thaht is, a function may call itself either directly or indirectly.
+
+Example:
+
