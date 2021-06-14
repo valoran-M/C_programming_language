@@ -330,3 +330,34 @@ In the definition of a macro, the ## operator concatenates two arguments
 
     paste(L, 23) // => "L23"
 ```
+
+#### Conditional Inclusion
+
+condition at the front of the headers to avoid multiple inclusion
+
+```c
+#if !define(HDR)
+// or
+#ifndef HDR
+
+#define HDR
+
+/* contents of hdr.h go here */
+
+#endif
+```
+
+We can also chain the conditions
+
+```c
+#if SYSTEM = SYSV
+    #define HDR "sysv.h"
+#elif SYSTEM = BSD
+    #define HDR "bsd.h"
+#elif SYSTEM = MSDOS
+    #define HDR "msdo.h"
+#else
+    #define HDR "default.h"
+#endif
+#include HDR
+```
