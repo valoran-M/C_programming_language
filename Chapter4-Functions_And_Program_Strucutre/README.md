@@ -285,5 +285,48 @@ begins where the source program was found
 
 ```c
 #define name replacement text
+
+#define forever for (;;) /* infinite loop */
+
+#define max(A, B) ((A) > (B) ? (A) : (B))
+
+x = max(p+q, r+s)
+
+// replaced by the line
+
+x = ((p+q) > (r+s) ? (p+q) : (r+s))
 ```
 
+Names may be undifined with `#undef`, usually to ensure that a routine is really a function, not a macro.
+
+```c
+    #undef getchar()
+
+    int getchar(void) { ... }
+```
+
+when we put # in front of the parameter is put in quotes
+
+```c
+    #define printd(expr) printf(#expr " = %g\n", expr)
+
+    // when this is invoked, as in
+
+    printd(x/y);
+
+    // the macro is expanded into
+
+    printf("x/y" " = %g\n", expr);
+
+    // and the strings are concatenated, so the effect is
+
+    printf("x/y = %g\n", expr);
+```
+
+In the definition of a macro, the ## operator concatenates two arguments
+
+```c
+    #define paste(front, back) front ## back
+
+    paste(L, 23) // => "L23"
+```
