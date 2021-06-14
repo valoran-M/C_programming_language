@@ -3,3 +3,42 @@
 
 ### Pointers and Addresses
 
+If c is a char and p is a pointer:
+
+<h1 align="center">
+    <img src="./diagram/pointeurPC.png">
+</h1>
+
+The unary operator & gives the adress of an object
+
+```c
+    p = &c
+
+    int x = 1, y = 2, z[10];
+    int *ip;        /* ip is a pointer to int */
+
+    ip = &x;        /* ip now points to x */
+    y = *ip;        /* y is now 1 */
+    *ip = 0         /* x is now 0 */
+    ip = &z[10];    /* ip now points to z[0] */
+
+    // Function
+
+    atof(char *);
+
+    // Operator
+
+    *ip = *ip + 10;
+
+    y = *ip + 1;
+
+    *ip += 1;
+
+    ++*ip;
+    (*ip)++;
+
+    iq = ip;
+```
+
+### Pointers and Function Arguments
+
