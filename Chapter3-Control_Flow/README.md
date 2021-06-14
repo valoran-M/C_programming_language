@@ -35,11 +35,11 @@
         statement
 ```
 
-[binsearch](1-binsearch.c)
+[binsearch](01-binsearch.c)
 
 Exercice :
 
-[ex3-1](exercises/ex3-1.c)
+[ex3-1](exercises/ex3-01.c)
 
 ### Switch
 
@@ -49,11 +49,11 @@ Exercice :
         case const-expr: statements
         default: statements
 
-[switch count](2-switch_count.c)
+[switch count](02-switch_count.c)
 
 Exercice :
 
-[ex3-2](exercises/ex3-2.c)
+[ex3-2](exercises/ex3-02.c)
 
 ### Loops - While and For
 
@@ -74,13 +74,13 @@ Exercice :
     }
 ```
 
-[atoi](3-atoi.c)
-[shellsort](4-shellsort.c)
-[reverse](5-reverse.c)
+[atoi](03-atoi.c)
+[shellsort](04-shellsort.c)
+[reverse](05-reverse.c)
 
 Exercice :
 
-[ex3-3](exercises/ex3-3.c)
+[ex3-3](exercises/ex3-03.c)
 
 ### Loops - Do while
 
@@ -91,7 +91,7 @@ Exercice :
     while (expression);
 ```
 
-[itoa](6-itoa.c)
+[itoa](06-itoa.c)
 
 ### Break and Continue
 
@@ -99,7 +99,7 @@ Exercice :
 
 exit from for, while, and do while
 
-[tim](7-trim.c)
+[tim](07-trim.c)
 
     continue
 
@@ -135,3 +135,7 @@ real example :
 found
     /* got one: a[i] == b[j]*/
 ```
+
+## all the exercises:
+
+[Exercises](./exercises/README.md)

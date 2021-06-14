@@ -25,7 +25,7 @@
 ```
 exercice :
 
-[size type](exercises/ex2-1.c)
+[size type](exercises/ex2-01.c)
 
 ### Constants
 
@@ -123,13 +123,13 @@ return 0 or 1.
 
 exercice :
 
-[logical](exercises/ex2-2.c)
+[logical](exercises/ex2-02.c)
 
 ### TYPES CONVERSIONS
 
 You can check 
-1. [convert char* to int](1-convert_s_to_integer.c) 
-1. [lower convertion](2-lower.c)
+1. [convert char* to int](01-convert_s_to_integer.c) 
+1. [lower convertion](02-lower.c)
 
 You can use cast opertor
         
@@ -137,7 +137,7 @@ You can use cast opertor
 
 exercice :
 
-[ex2.3 : hexa in sqrt](exercises/ex2-3.c)
+[ex2.3 : hexa in sqrt](exercises/ex2-03.c)
 
 ### Increment and Decrement Operators
 
@@ -164,13 +164,13 @@ prefix :
         s[j++] = s[i];
 ```
 
-[squeeze](4-squeeze.c)
-[strcat](5-strcat.c)
+[squeeze](04-squeeze.c)
+[strcat](05-strcat.c)
 
 Exercices :
 
-[ex2.3 : squeeze](exercises/ex2-4.c)
-[ex2.3 : any](exercises/ex2-5.c)
+[ex2.3 : squeeze](exercises/ex2-04.c)
+[ex2.3 : any](exercises/ex2-05.c)
 
 ### Bitwise Operator
 
@@ -191,14 +191,14 @@ applied to : char, short, int and long, signed or unsigned
     1 | 2 = 2
     1 || 2 = 1
 
-[getbits](6-getbits.c)
+[getbits](06-getbits.c)
 
 
 Exercices :
 
-[ex2.6 : setbits](exercises/ex2-6.c)
-[ex2.7 : invert](exercises/ex2-7.c)
-[ex2.8 : reightrot](exercises/ex2-8.c)
+[ex2.6 : setbits](exercises/ex2-06.c)
+[ex2.7 : invert](exercises/ex2-07.c)
+[ex2.8 : reightrot](exercises/ex2-08.c)
 
 
 ### Assignment Operators and Expressions
@@ -214,11 +214,11 @@ Exercices :
 op :
     + - * / % << >> & ^ |
 
-[bitcount](7-bitcount.c)
+[bitcount](07-bitcount.c)
 
 Exercice :
 
-[ex2.9 : reightrot](exercises/ex2-9.c)
+[ex2.9 : reightrot](exercises/ex2-09.c)
 
 ### Conditional Expressions
 
@@ -251,3 +251,7 @@ Exercice :
 |?:|right to left|
 |= += -= *= /= %= &= ^= |= <<= >>=|right to left|
 |,|left to right|
+
+## all the exercises:
+
+[Exercises](./exercises/README.md)

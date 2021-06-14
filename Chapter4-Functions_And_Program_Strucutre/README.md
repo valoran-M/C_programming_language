@@ -11,13 +11,13 @@
     } 
 ```
 
-[grep](1-grep.c)
-[getline](2-getline.c)
-[strindex](3-strindex.c)
+[grep](01-grep.c)
+[getline](02-getline.c)
+[strindex](03-strindex.c)
 
 Exercice:
 
-[ex4-1](exercises/ex4-1.c)
+[ex4-1](exercises/ex4-01.c)
 
 ### Functions Returning Non-integers
 
@@ -30,8 +30,8 @@ Exercice:
     }
 ```
 
-[atof](4-atof.c)
-[rudimentary calculator](5-rud_calc.c)
+[atof](04-atof.c)
+[rudimentary calculator](05-rud_calc.c)
 
 ```c
     /* atoi: convert string s to integer using atof*/
@@ -43,7 +43,7 @@ Exercice:
     }
 ```
 
-[ex4-2](exercises/ex4-2.c)
+[ex4-2](exercises/ex4-02.c)
 
 ### External Variables
 
@@ -86,20 +86,20 @@ Exercice:
     // routines called by getop()
 ```
 
-[polish calc](6-polish_calc.c)
-[stack](7-stack.c)
-[getop](8-getop.c)
-[getch](9-getch.c)
+[polish calc](06-polish_calc.c)
+[stack](07-stack.c)
+[getop](08-getop.c)
+[getch](09-getch.c)
 
 Exercices:
 
-[ex4-3](exercises/ex4-3.c)
-[ex4-4](exercises/ex4-4.c)
-[ex4-5](exercises/ex4-5.c)
-[ex4-6](exercises/ex4-6.c)
-[ex4-7](exercises/ex4-7.c)
-[ex4-8](exercises/ex4-8.c)
-[ex4-9](exercises/ex4-9.c)
+[ex4-3](exercises/ex4-03.c)
+[ex4-4](exercises/ex4-04.c)
+[ex4-5](exercises/ex4-05.c)
+[ex4-6](exercises/ex4-06.c)
+[ex4-7](exercises/ex4-07.c)
+[ex4-8](exercises/ex4-08.c)
+[ex4-9](exercises/ex4-09.c)
 [ex4-10](exercises/ex4-10.c)
 
 ### Scope Rules

@@ -42,3 +42,17 @@ The unary operator & gives the adress of an object
 
 ### Pointers and Function Arguments
 
+```c
+void swap(int *px, int *py)
+{
+    int temp;
+
+    temp = *px;
+    *px = *py
+    *py = temp;
+}
+```
+
+Example:
+
+[getint](01-getint.c)

@@ -11,8 +11,8 @@ main()
 }
 ```
 
-1. [exercice 1](./exercises/ex1-1.c)
-1. [exercice 2](./exercises/ex1-2.c)
+1. [exercice 1](./exercises/ex1-01.c)
+1. [exercice 2](./exercises/ex1-02.c)
 
 ### Variables and Arithmetic Expressions
 
@@ -31,8 +31,8 @@ main()
     }
 ```
 
-1. [exercice 3](./exercises/ex1-3.c)
-1. [exercice 4](./exercises/ex1-4.c)
+1. [exercice 3](./exercises/ex1-03.c)
+1. [exercice 4](./exercises/ex1-04.c)
 
 ### The For Statement
 
@@ -43,7 +43,7 @@ main()
     }
 ```
 
-1. [exercice 5](./exercises/ex1-5.c)
+1. [exercice 5](./exercises/ex1-05.c)
 
 ### Symbolic Constants
 
@@ -62,13 +62,13 @@ main()
 
 ###### File Copying
 
-1. [exercice 6](./exercises/ex1-6.c)
-1. [exercice 7](./exercises/ex1-7.c)
+1. [exercice 6](./exercises/ex1-06.c)
+1. [exercice 7](./exercises/ex1-07.c)
 
 ###### Line counting
 
-1. [exercice 8](./exercises/ex1-8.c)
-1. [exercice 9](./exercises/ex1-9.c)
+1. [exercice 8](./exercises/ex1-08.c)
+1. [exercice 9](./exercises/ex1-09.c)
 1. [exercice 10](./exercises/ex1-10.c)
 
 ###### Wrod counting
