@@ -1,5 +1,5 @@
 # Chapter 4:
-# Focntion And Program Structure
+# Functions And Program Structure
 
 ### Basic of Function
 

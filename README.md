@@ -69,3 +69,18 @@ My notes on the book The C programming language (ANSI C).
 1. Initialization
 1. Recursion
 1. The C preprocessor
+
+[Chapter5: Pointers and Arrays](Chapter5-Pointeurs_and_Arrays)
+
+1. Pointers and Addresses
+1. Pointers and Function Arguments
+1. Pointers and Arrays
+1. Address Arithmetic
+1. Character Pointers and Functions
+1. Pointer Array; Pointers to Pointer
+1. Multi-dimensional Arrays
+1. Initialization of Pointer Arrays
+1. Pointers vs. Multi-dimensional Arrays
+1. Command-line Arguments
+1. Pointer to Functions
+1. Complicated Declarations
