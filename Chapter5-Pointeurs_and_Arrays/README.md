@@ -61,3 +61,11 @@ Exercices:
 
 [ex 5.1](exercises/ex5-01.c)
 [ex 5.2](exercises/ex5-02.c)
+
+### Pointers and Arrays
+
+<h1 align="center">
+    <img src="./diagram/array_c.png">
+</h1>
+
+pa[i] ⬄ *(pa + i)
