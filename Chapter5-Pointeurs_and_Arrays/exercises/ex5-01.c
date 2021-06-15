@@ -1,5 +1,5 @@
 /**
- * Exercice 4.1:
+ * Exercice 5.1:
  * 
  *  As written, getint treats a + or - not followed
  * by a digit as a valid representation zero. 
