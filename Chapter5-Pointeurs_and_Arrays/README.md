@@ -56,3 +56,8 @@ void swap(int *px, int *py)
 Example:
 
 [getint](01-getint.c)
+
+Exercices:
+
+[ex 5.1](exercises/ex5-01.c)
+[ex 5.2](exercises/ex5-02.c)
