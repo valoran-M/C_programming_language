@@ -69,3 +69,9 @@ Exercices:
 </h1>
 
 pa[i] ⬄ *(pa + i)
+
+Example:
+
+[strlen](02-strlen.c)
+
+### Adress Arithmetic
