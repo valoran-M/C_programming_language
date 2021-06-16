@@ -75,3 +75,7 @@ Example:
 [strlen](02-strlen.c)
 
 ### Adress Arithmetic
+
+Exemple:
+
+[alloc](03-alloc.c)
