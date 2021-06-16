@@ -13,3 +13,10 @@ char *alloc(int n) /* return pointer to n character */
     else /* not enough room */
         return 0;
 }
+
+void afree(char *p) /* free storage pointed to by p */
+{
+    if (p >= allocbuf && p < allocbuf + ALLOCSIZE)
+        allocp = p;
+}
+

@@ -76,6 +76,11 @@ Example:
 
 ### Adress Arithmetic
 
+<h1 align="center">
+    <img src="./diagram/alloc.png">
+</h1>
+
 Exemple:
 
 [alloc](03-alloc.c)
+[strlen](04-strlen.c)
