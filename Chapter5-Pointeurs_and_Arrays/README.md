@@ -84,3 +84,18 @@ Exemple:
 
 [alloc](03-alloc.c)
 [strlen](04-strlen.c)
+
+### Character Pointers and Function
+
+A string constant, written as :
+
+    "I am a string"
+
+```c
+    char amessage[] = "new is a time";  /* an array */
+    char *pmessage = "now is the time"; /* a pointer */
+```
+
+<h1 align="center">
+    <img src="./diagram/pmessage.png">
+</h1>
