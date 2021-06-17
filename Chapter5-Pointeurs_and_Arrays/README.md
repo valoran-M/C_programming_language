@@ -99,3 +99,8 @@ A string constant, written as :
 <h1 align="center">
     <img src="./diagram/pmessage.png">
 </h1>
+
+Exemple:
+
+[strcpy](05-strcpy.c)
+[strcmp](06-strcmp.c)
