@@ -23,3 +23,11 @@
      Write the function strend(s, t), which returns 1
     if the string t occurs at the end of the string s,
     and zero otherwise.
+
+## Exercice 5.5:
+
+    Write a versions of the library function `strncpy`,
+    `strncat`, and `strncmp`, which operate on at most
+    the first n characters of thier argument strings.
+    For example, strncpy(s,t,n) copies at most n 
+    characters of t to s.
