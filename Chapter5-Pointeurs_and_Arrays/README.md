@@ -100,7 +100,14 @@ A string constant, written as :
     <img src="./diagram/pmessage.png">
 </h1>
 
-Exemple:
+Example:
 
 [strcpy](05-strcpy.c)
 [strcmp](06-strcmp.c)
+
+Exercice:
+
+[ex5.3](exercises/ex5-03.c)
+[ex5.4](exercises/ex5-04.c)
+[ex5.5](exercises/ex5-05.c)
+[ex5.6](exercises/ex5-06.c)
