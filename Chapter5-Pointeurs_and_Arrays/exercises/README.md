@@ -31,3 +31,10 @@
     the first n characters of thier argument strings.
     For example, strncpy(s,t,n) copies at most n 
     characters of t to s.
+
+## Exercice 5.7:
+
+    Rewrite readlines to store lines in an array 
+    supplied by main, rather than calling alloc to 
+    maintain storage. How much faster is the 
+    progtam?
