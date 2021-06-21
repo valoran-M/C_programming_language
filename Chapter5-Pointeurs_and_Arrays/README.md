@@ -111,3 +111,17 @@ Exercice:
 [ex5.4](exercises/ex5-04.c)
 [ex5.5](exercises/ex5-05.c)
 [ex5.6](exercises/ex5-06.c)
+
+### Pointer Arrays; Pointer to Pointers
+
+you can stor a pointer in array.
+
+Let us illustrate by writing a program that will sort a set of text lines.
+
+* Process:
+
+        Read all the lines of input
+        sort them
+        print them in order
+
+[row sorter](07-pointer_pointer.c)
