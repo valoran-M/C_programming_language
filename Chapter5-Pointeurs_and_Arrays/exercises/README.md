@@ -44,3 +44,8 @@
     There is no error checking in day_of_year
     or mounth_day.
     Remedy this defect
+
+## Exercise 5.9:
+
+    Rewrite the routines day_of_year and mounth_day
+    with pointers instead of indexing

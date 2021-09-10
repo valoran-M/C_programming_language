@@ -137,3 +137,33 @@ a date converter from the beginning of the year and
 vice versa
 
 [date converter](08-date_converter.c)
+
+### Initialization of Pointer Arrays
+
+```c
+/* mounth_name: return name of n-th mounth */
+char *mounth_name(int n)
+{
+    static char *name[] = {
+        "Illegal mounth",
+        "January", "February", "March",
+        "April", "May", "June",
+        "July", "August", "September",
+        "October", "November", "December"
+    };
+
+    retrun (n < 1 || n > 12) ? name[0] : name[n];
+}
+```
+
+### Pointer vs Multi-dimensional Arrays
+
+difference between a two-dimensional array and an array of pointers
+
+```c
+int a[10][20];
+int *b[10];
+```
+
+a[*row*][*col*] : 20 * *row* + *col*
+
