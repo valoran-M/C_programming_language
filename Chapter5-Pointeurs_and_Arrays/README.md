@@ -125,3 +125,15 @@ Let us illustrate by writing a program that will sort a set of text lines.
         print them in order
 
 [row sorter](07-pointer_pointer.c)
+
+Exercice:
+
+[ex5.7](exercises/ex5-07.c)
+
+### Multi-dimensional Arrays
+
+We will illustrate the multi-dimensional arrays by
+a date converter from the beginning of the year and
+vice versa
+
+[date converter](08-date_converter.c)
