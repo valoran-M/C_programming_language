@@ -38,3 +38,9 @@
     supplied by main, rather than calling alloc to 
     maintain storage. How much faster is the 
     progtam?
+
+## Exercice 5.8:
+
+    There is no error checking in day_of_year
+    or mounth_day.
+    Remedy this defect
