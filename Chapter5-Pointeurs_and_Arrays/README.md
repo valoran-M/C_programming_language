@@ -165,6 +165,8 @@ main(argc, *argv[])
 ```
 
 [echo](09-echo.c)
+[find](10-find.c)
 
 ### pointer to functions
 
+[qsort](11-sort.c)
