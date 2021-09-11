@@ -165,3 +165,6 @@ main(argc, *argv[])
 ```
 
 [echo](09-echo.c)
+
+### pointer to functions
+
