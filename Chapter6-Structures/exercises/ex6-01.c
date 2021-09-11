@@ -1,3 +1,11 @@
+/**
+ * Exercice 6.1
+ * 
+ *  Our version of getword does not properly handle
+ * underscores, string constants, comments, or prepocessor
+ * control lines. Write a better version.
+ * 
+ **/
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
@@ -77,31 +85,30 @@ int getword(char *word, int lim)
         ;
     if (c != EOF)
         *w++ = c;
-    if (!isalpha(c) || c == '_' || c == '#')
+    if (isalpha(c) || c == '_' || c == '#')
     {
-        for (; --lim > 0; w++)
-            if (!isalnum(*w = getch()))
+        for (; --lim > 0; ++w)
+            if (!isalnum(*w = getch()) && *w != '_')
             {
                 ungetch(*w);
                 break;
             }
     }
-    else if (c == '\'') /* skip character constants */
+    else if (c == '\'')
         while ((c = getch()) != '\'')
             ;
     else if (c == '\"')
-    { /* skip string constants */
+    {
         while ((c = getch()) != '\"')
             if (c == '\\')
                 getch();
     }
-    else if (c == '/' && (c = getch()) == '*') /* skip comments */
+    else if (c == '/' && (c = getch()) == '*')
         while ((c = getch()) != EOF)
             if (c == '*' && (c = getch()) == '/')
                 break;
-
     *w = '\0';
-    return word[0];
+    return c;
 }
 
 #define BUFSIZE 100
