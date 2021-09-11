@@ -114,10 +114,6 @@ Exercice:
 
 ### Pointer Arrays; Pointer to Pointers
 
-you can stor a pointer in array.
-
-Let us illustrate by writing a program that will sort a set of text lines.
-
 * Process:
 
         Read all the lines of input
@@ -131,10 +127,6 @@ Exercice:
 [ex5.7](exercises/ex5-07.c)
 
 ### Multi-dimensional Arrays
-
-We will illustrate the multi-dimensional arrays by
-a date converter from the beginning of the year and
-vice versa
 
 [date converter](08-date_converter.c)
 
@@ -158,8 +150,6 @@ char *mounth_name(int n)
 
 ### Pointer vs Multi-dimensional Arrays
 
-difference between a two-dimensional array and an array of pointers
-
 ```c
 int a[10][20];
 int *b[10];
@@ -167,3 +157,11 @@ int *b[10];
 
 a[*row*][*col*] : 20 * *row* + *col*
 
+
+### Command-line Arguments
+
+```c
+main(argc, *argv[])
+```
+
+[echo](09-echo.c)
