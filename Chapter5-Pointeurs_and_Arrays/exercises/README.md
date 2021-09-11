@@ -49,3 +49,14 @@
 
     Rewrite the routines day_of_year and mounth_day
     with pointers instead of indexing
+
+##    Exercice 5.10:
+
+     Write a programs entab and detab (written as exercises on
+    Chapter 1) to accept a list of tab stops as arguments.
+    Use the default tab set tings if ther are no argument. 
+    For example,
+
+         expr 2 3 4 + *
+
+    evaluates 2 * ( 3 + 4)
