@@ -28,3 +28,4 @@ screen.pt1.x;
 
 ### Arrays of Structures
 
+[keyword](02-keyword.c)
