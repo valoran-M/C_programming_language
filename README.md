@@ -84,3 +84,15 @@ My notes on the book The C programming language (ANSI C).
 1. Command-line Arguments
 1. Pointer to Functions
 1. Complicated Declarations
+
+[Chapter6: Structures](Chapter6-Structures)
+
+1. Basic of Structures
+1. Structures and Functions
+1. Arrays of structures
+1. Pointers to Structures
+1. Self-referential Structures
+1. Table Lookup
+1. Typedef
+1. Unions
+1. Bit-fields
