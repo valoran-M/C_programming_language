@@ -104,3 +104,16 @@
     together, so that case distinctions are not
     made during sorting; for exemple, a and A compare
     equal.
+
+## Exercice 5.16
+
+     Add the -d ("directory order") option, wich makes comparisons
+    only on letter, numbers and blanks. Make sur it works in conjuction
+    wich -f
+
+## Exercice 5.17:
+
+     Add a field-handling capability, so sorting may be done on fields
+    within lines, each field sorted according to an independent set of 
+    options. (The index for this book was sorted with -df for the 
+    index category and -n for the page numbers.)
