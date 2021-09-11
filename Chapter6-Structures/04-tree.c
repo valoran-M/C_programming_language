@@ -1,67 +1,86 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define MAXWORD 100
 
-struct key
+struct tnode *addtree(struct tnode *, char *);
+void treeprint(struct tnode *);
+int getword(char *, int);
+
+struct tnode
 {
     char *word;
     int count;
-} keytab[] = {
-    "auto", 0,
-    "break", 0,
-    "case", 0,
-    "char", 0,
-    "const", 0,
-    "continue", 0,
-    "default", 0,
-    /* ... */
-    "unsigned", 0,
-    "void", 0,
-    "volatile", 0,
-    "while", 0};
+    struct tnode *left;
+    struct tnode *right;
+};
 
-#define NKEYS (sizeof keytab / sizeof keytab[0])
-
-int getword(char *, int);
-struct key *binsearch(char *, struct key *, int);
-
-/* count C keyword; pointer version*/
+/* word frequency count */
 int main(int argc, char const *argv[])
 {
+    struct tnode *root;
     char word[MAXWORD];
-    struct key *p;
 
+    root = NULL;
     while (getword(word, MAXWORD) != EOF)
         if (isalpha(word[0]))
-            if ((p = binsearch(word, keytab, NKEYS)) != NULL)
-                p->count++;
-    for (p = keytab; p < keytab + NKEYS; p++)
-        if (p->count > 0)
-            printf("%4d %s\n", p->count, p->word);
+            root = addtree(root, word);
+    treeprint(root);
     return 0;
 }
 
-/* binsearch: find word in tab[0]...tab[n-1] */
-struct key *binsearch(char *word, struct key *tab, int n)
+struct tnode *talloc(void);
+char *my_strdup(char *);
+
+/* addtree: add a node with w, at or below p */
+struct tnode *addtree(struct tnode *p, char *w)
 {
     int cond;
-    struct key *low = &tab[0];
-    struct key *high = &tab[n];
-    struct key *mid;
 
-    while (low < high)
+    if (p == NULL)
     {
-        mid = low + (high - low) / 2;
-        if ((cond = strcmp(word, mid->word)) < 0)
-            high = mid;
-        else if (cond > 0)
-            low = mid + 1;
-        else
-            return mid;
+        p = talloc();
+        p->word = my_strdup(w);
+        p->count = 1;
+        p->left = p->right = NULL;
     }
-    return NULL;
+    else if ((cond = strcmp(w, p->word)) == 0)
+        p->count++;
+    else if (cond < 0)
+        p->left = addtree(p->left, w);
+    else
+        p->right = addtree(p->right, w);
+    return p;
+}
+
+/* treeprint: in-order print of tree p */
+void treeprint(struct tnode *p)
+{
+    if (p != NULL)
+    {
+        treeprint(p->left);
+        printf("%4d %s\n", p->count, p->word);
+        treeprint(p->right);
+    }
+}
+
+/* talloc: make a tnode */
+struct tnode *talloc(void)
+{
+    return (struct tnode *)malloc(sizeof(struct tnode));
+}
+
+/* make a duplicate of s*/
+char *my_strdup(char *s)
+{
+    char *p;
+
+    p = (char *)malloc(strlen(s) + 1);
+    if (p != NULL)
+        strcpy(p, s);
+    return p;
 }
 
 /* getword: get next word or character from input */

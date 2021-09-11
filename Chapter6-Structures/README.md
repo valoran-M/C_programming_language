@@ -33,3 +33,7 @@ screen.pt1.x;
 ### Pointers to Structures
 
 [keyword](03-keyword.c)
+
+### Self-referential Structures
+
+[tree](04-tree.c)
