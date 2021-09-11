@@ -130,6 +130,10 @@ Exercice:
 
 [date converter](08-date_converter.c)
 
+Exercice:
+
+[ex5.8](exercises/ex5-08.c)
+
 ### Initialization of Pointer Arrays
 
 ```c
@@ -157,6 +161,10 @@ int *b[10];
 
 a[*row*][*col*] : 20 * *row* + *col*
 
+Exercice:
+
+[ex5.9](exercises/ex5-09.c)
+
 
 ### Command-line Arguments
 
@@ -167,6 +175,66 @@ main(argc, *argv[])
 [echo](09-echo.c)
 [find](10-find.c)
 
+Exercice:
+
+[ex5.10](exercises/ex5-10.c)
+[ex5.11](exercises/ex5-11.c)
+[ex5.12](exercises/ex5-12.c)
+[ex5.13](exercises/ex5-13.c)
+
 ### pointer to functions
 
 [qsort](11-sort.c)
+
+Exercice:
+
+[ex5.14](exercises/ex5-14.c)
+[ex5.15](exercises/ex5-15.c)
+[ex5.16](exercises/ex5-16.c)
+[ex5.17](exercises/ex5-17.c)
+
+
+### Complicated Declarations
+
+```c
+char **argv
+```
+argv: pointer ro pointer to char
+
+```c
+int (*daytab)[3]
+```
+daytab: pointer to array[13] of int
+
+```c
+int *daytab[3]
+```
+daytab: array[13] of pointer to int
+
+```c
+void *comp()
+```
+comp: function returning to void
+
+```c
+void (*comp)()
+```
+comp: pointer to function returning void
+
+```c
+char (*(*x())[])[]
+```
+x: function retruning pointer to array[] of
+pointer to function returning char
+
+```c
+char (*(*x[3])())[5]
+```
+x: array[3] of pointer to function returning
+pointer to array[5] of char
+
+Exercice:
+
+[ex5.14](exercises/ex5-18.c)
+[ex5.15](exercises/ex5-19.c)
+[ex5.16](exercises/ex5-20.c)
