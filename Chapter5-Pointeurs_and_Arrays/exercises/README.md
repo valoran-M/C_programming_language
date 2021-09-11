@@ -60,3 +60,9 @@
          expr 2 3 4 + *
 
     evaluates 2 * ( 3 + 4)
+
+## Exercice 5.11
+
+     Modify the programs entab and detab (written
+    as exercices in Chapter 1) to accept a list of tab stops as arguments.
+    Use the default tab settings is there are no arguments.
