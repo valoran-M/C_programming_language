@@ -97,3 +97,10 @@
     a -r flag, wich indicates sorting in
     reverse (decreasing order). Be sur that -r
     works with -n
+
+## Exercice 5.15
+
+     Add the option -f to fold upper and lower case
+    together, so that case distinctions are not
+    made during sorting; for exemple, a and A compare
+    equal.

@@ -1,15 +1,16 @@
 /**
- * Exercice 5.14
- * 
- *  Modify the sort program to handel
- * a -r flag, wich indicates sorting in
- * reverse (decreasing order). Be sur that -r
- * works with -n
+ * Exercice 5.15
+ *
+ *  Add the option -f to fold upper and lower case
+ * together, so that case distinctions are not
+ * made during sorting; for exemple, a and A compare
+ * equal.
  * 
  **/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 #define MAXLINES 5000
 
@@ -21,23 +22,39 @@ void write_lines(char *lineptr[], int nlines);
 void my_qsort(void *lineptr[], int left, int right, int reverse,
               int (*comp)(void *, void *));
 int numcmp(const char *, const char *);
+int strcmpignore(const char *s1,const char *s2);
 
 /* sort input lines */
 int main(int argc, char const *argv[])
 {
-    int nlines, i;
-    int reverse = 1, numeric = 0;
+    int nlines, c;
+    int reverse = 1, numeric = 0, fold = 0;
 
-    for (i = 1; i < argc; i++)
-        if (strcmp(argv[i], "-n") == 0)
-            numeric = 1;
-        else if (strcmp(argv[i], "-r") == 0)
-            reverse = -1;
+    while (--argc > 0 && *(*++argv) == '-')
+    {
+        while ((c = *++(*argv)) != '\0')
+        {
+            switch (c)
+            {
+            case 'n':
+                numeric = 1;
+                break;
+            case 'r':
+                reverse = -1;
+                break;
+            case 'f':
+                fold = 1;
+                break;
+            default:
+                break;
+            }
+        }
+    }
 
     if ((nlines = readlines(lineptr, MAXLINES)) >= 0)
     {
         my_qsort((void **)lineptr, 0, nlines - 1, reverse,
-                 (int (*)(void *, void *))(numeric ? numcmp : strcmp));
+                 (int (*)(void *, void *))(numeric ? numcmp : (fold ? strcmpignore : strcmp)));
         write_lines(lineptr, nlines);
         return 0;
     }
@@ -80,6 +97,15 @@ int numcmp(const char *s1, const char *s2)
         return 1;
     else
         return 0;
+}
+
+/* strcmpignore: compare S1 and s2*/
+int strcmpignore(const char *s1,const  char *s2)
+{
+    for (; tolower(*s1) == tolower(*s2); ++s1, ++s2)
+        if (*s1 == '\0')
+            return 0;
+    return tolower(*s1) - tolower(*s2);
 }
 
 /* swap: interchange v[i] and v[j] */
