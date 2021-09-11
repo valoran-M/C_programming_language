@@ -25,3 +25,6 @@ screen.pt1.x;
 ### Structures and Functions
 
 [point](01-point.c)
+
+### Arrays of Structures
+
