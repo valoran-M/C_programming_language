@@ -96,3 +96,24 @@ My notes on the book The C programming language (ANSI C).
 1. Typedef
 1. Unions
 1. Bit-fields
+
+[Chapter7: Input and Output](Chapter7-Input_And_Ouput)
+
+1. Standard Input and Ouput
+1. Formatted Output - Printf
+1. Variable-length Argument Lists
+1. Formatted Input-Scanf
+1. File Access
+1. Error Handling-Stderr and Exit
+1. Line Input and Output
+1. Miscellaneous Functions
+
+[Chapter8: The UNIX System Interface](Chapter8-The_UNIX_System_Interface)
+
+1. File Descriptors
+1. Low Level I/O - Read and Write
+1. Open, Creat, Close, Unlink
+1. Random Access-Lseek
+1. Example - An Implementation of Fopen and Gtec
+1. Exemple - Listing Directories
+1. Example - A Storage Allocator
