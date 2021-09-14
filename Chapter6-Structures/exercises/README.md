@@ -20,3 +20,9 @@
     words in its input sorted int decreasing order of 
     the line numbers on which it occurs. Remove nois 
     words like "the" "and" and so on.
+
+## Exercice 6.4:
+
+      Write a program that printsnthe distinct words in 
+     its input sorted int decreasing order of frequendcy 
+     or occurrence. Precede each word by its count.

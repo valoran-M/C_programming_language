@@ -30,6 +30,10 @@ screen.pt1.x;
 
 [keyword](02-keyword.c)
 
+Exercice
+
+[ex6.1](exercises/ex6-01.c)
+
 ### Pointers to Structures
 
 [keyword](03-keyword.c)
@@ -37,3 +41,9 @@ screen.pt1.x;
 ### Self-referential Structures
 
 [tree](04-tree.c)
+
+Exercice
+
+[ex6.2](exercises/ex6-02.c)
+[ex6.3](exercises/ex6-03.c)
+[ex6.4](exercises/ex6-04.c)
